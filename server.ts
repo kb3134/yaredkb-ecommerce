@@ -42,6 +42,25 @@ import {
 } from './server/cloudStorage';
 
 const app = express();
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
+
+let dbLoadedPromise: Promise<void> | null = null;
+function ensureDbLoaded() {
+  if (!dbLoadedPromise) {
+    dbLoadedPromise = loadDatabaseAsync().catch(err => {
+      console.error('[Database Load Error]', err);
+    });
+  }
+  return dbLoadedPromise;
+}
+
+app.use(async (req, res, next) => {
+  if (req.path.startsWith('/api')) {
+    await ensureDbLoaded();
+  }
+  next();
+});
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'admin';
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123';
@@ -2701,4 +2720,8 @@ async function startServer() {
   });
 }
 
-startServer();
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;
