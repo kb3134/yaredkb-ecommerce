@@ -1,5 +1,5 @@
 import React from 'react';
-import { LOOKBOOK_HOTSPOTS } from '../data/mockData';
+import { LOOKBOOK_HOTSPOTS } from '../data/constants';
 import { Product, Currency } from '../types';
 import { Sparkles, ArrowRight, Eye, ShoppingBag } from 'lucide-react';
 

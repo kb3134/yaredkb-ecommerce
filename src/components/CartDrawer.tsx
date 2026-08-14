@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CartItem, Currency } from '../types';
-import { CURRENCY_RATES } from '../data/mockData';
+import { CURRENCY_RATES } from '../data/constants';
 import { 
   X, 
   Trash2, 

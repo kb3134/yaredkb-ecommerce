@@ -3,7 +3,7 @@ import { StudioImage, StudioCategory, Product, Currency } from '../types';
 import { ProductCard } from './ProductCard';
 import { Pagination } from './Pagination';
 import { ResponsiveCategoryBar } from './ResponsiveCategoryBar';
-import { CURRENCY_RATES } from '../data/mockData';
+import { CURRENCY_RATES } from '../data/constants';
 import { Search, Filter, Sparkles, Eye, X, ArrowUpDown, Tag, Calendar, Layers, ChevronRight, MessageSquare, Compass, RefreshCw, ShoppingBag, Coins } from 'lucide-react';
 
 interface StudioGalleryPageProps {

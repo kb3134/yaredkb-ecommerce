@@ -4,7 +4,7 @@ import path from 'path';
 import fs from 'fs';
 import bcrypt from 'bcryptjs';
 import { createServer as createViteServer } from 'vite';
-import { MOCK_PRODUCTS, MOCK_ORDERS, MOCK_BESPOKE_REQUESTS, DEFAULT_BRANDING_IMAGES, MOCK_CONTACT_MESSAGES, DEFAULT_STUDIO_CATEGORIES, MOCK_STUDIO_IMAGES, CURRENCY_RATES } from './src/data/mockData';
+import { DEFAULT_BRANDING_IMAGES, DEFAULT_STUDIO_CATEGORIES, CURRENCY_RATES } from './src/data/constants';
 import { Product, Order, BespokeRequest, BrandingImages, ContactMessage, StudioCategory, StudioImage } from './src/types';
 import { 
   getSqlProducts, 
@@ -853,13 +853,13 @@ interface DatabaseSchema {
 }
 
 // Data state initialized with defaults
-let productsDb: Product[] = [...MOCK_PRODUCTS];
-let ordersDb: Order[] = [...MOCK_ORDERS];
-let bespokeDb: BespokeRequest[] = [...MOCK_BESPOKE_REQUESTS];
+let productsDb: Product[] = [];
+let ordersDb: Order[] = [];
+let bespokeDb: BespokeRequest[] = [];
 let brandingDb: BrandingImages = sanitizeBrandingImages(DEFAULT_BRANDING_IMAGES);
-let contactMessagesDb: ContactMessage[] = [...MOCK_CONTACT_MESSAGES];
+let contactMessagesDb: ContactMessage[] = [];
 let studioCategoriesDb: StudioCategory[] = [...DEFAULT_STUDIO_CATEGORIES];
-let studioImagesDb: StudioImage[] = [...MOCK_STUDIO_IMAGES];
+let studioImagesDb: StudioImage[] = [];
 let currencyRatesDb = { ...CURRENCY_RATES };
 
 async function loadDatabaseAsync(): Promise<void> {
@@ -889,14 +889,9 @@ async function loadDatabaseAsync(): Promise<void> {
   // 2. Query Cloud SQL PostgreSQL as primary source of truth for products & persistent state
   try {
     const sqlProducts = await getSqlProducts();
-    if (sqlProducts && sqlProducts.length > 0) {
+    if (sqlProducts) {
       productsDb = sqlProducts;
       console.log(`[Cloud SQL] Loaded ${sqlProducts.length} persistent products from PostgreSQL database.`);
-    } else if (productsDb.length > 0) {
-      console.log(`[Cloud SQL] Seeding ${productsDb.length} initial products to PostgreSQL database...`);
-      for (const p of productsDb) {
-        await upsertSqlProduct(p).catch(err => console.warn(`[Cloud SQL] Seed product error: ${err.message}`));
-      }
     }
 
     const sqlStudioCategories = await getSqlStudioCategories();

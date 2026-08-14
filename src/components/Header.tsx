@@ -15,7 +15,7 @@ import {
   Upload
 } from 'lucide-react';
 import { Currency } from '../types';
-import { CURRENCY_RATES } from '../data/mockData';
+import { CURRENCY_RATES } from '../data/constants';
 
 interface HeaderProps {
   logoUrl?: string;

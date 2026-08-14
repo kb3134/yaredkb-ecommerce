@@ -18,7 +18,7 @@ import {
   StudioImage,
   AdminUser
 } from './types';
-import { DEFAULT_BRANDING_IMAGES, MOCK_PRODUCTS, MOCK_ORDERS, MOCK_BESPOKE_REQUESTS, MOCK_CONTACT_MESSAGES, DEFAULT_STUDIO_CATEGORIES, CURRENCY_RATES } from './data/mockData';
+import { DEFAULT_BRANDING_IMAGES, DEFAULT_STUDIO_CATEGORIES, CURRENCY_RATES } from './data/constants';
 import { Header } from './components/Header';
 import { HeroBanner } from './components/HeroBanner';
 import { CategoryFilter } from './components/CategoryFilter';
@@ -222,9 +222,8 @@ export default function App() {
         return;
       }
     } catch (err) {
-      console.warn('Backend unavailable, using local contact messages state.');
+      console.warn('Backend unavailable for contact messages.');
     }
-    setContactMessages(prev => prev.length > 0 ? prev : MOCK_CONTACT_MESSAGES);
   };
 
   const handleSubmitContactMessage = async (msgData: Omit<ContactMessage, 'id' | 'createdAt' | 'read'>) => {
@@ -542,9 +541,8 @@ export default function App() {
         return;
       }
     } catch (err) {
-      console.warn('Backend unavailable, using local products state.');
+      console.warn('Backend unavailable for products.');
     }
-    setProducts(prev => prev.length > 0 ? prev : MOCK_PRODUCTS);
   };
 
   const fetchOrders = async () => {
@@ -556,9 +554,8 @@ export default function App() {
         return;
       }
     } catch (err) {
-      console.warn('Backend unavailable, using local orders state.');
+      console.warn('Backend unavailable for orders.');
     }
-    setOrders(prev => prev.length > 0 ? prev : MOCK_ORDERS);
   };
 
   const fetchBespokeRequests = async () => {
@@ -570,9 +567,8 @@ export default function App() {
         return;
       }
     } catch (err) {
-      console.warn('Backend unavailable, using local bespoke requests state.');
+      console.warn('Backend unavailable for bespoke requests.');
     }
-    setBespokeRequests(prev => prev.length > 0 ? prev : MOCK_BESPOKE_REQUESTS);
   };
 
   const fetchAnalytics = async () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Product, Currency } from '../types';
-import { CURRENCY_RATES } from '../data/mockData';
+import { CURRENCY_RATES } from '../data/constants';
 import { Heart, Eye, ShoppingBag, Scissors, Check, Star } from 'lucide-react';
 
 interface ProductCardProps {

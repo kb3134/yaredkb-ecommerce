@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Product, Currency } from '../types';
-import { CURRENCY_RATES } from '../data/mockData';
+import { CURRENCY_RATES } from '../data/constants';
 import { 
   X, 
   ShoppingBag, 

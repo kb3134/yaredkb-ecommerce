@@ -3,7 +3,7 @@ import { Product, Order, BespokeRequest, Weaver, AdminAnalytics, BrandingImages,
 import { isProductInCollection } from './StudioStoreCatalog';
 import { AdminStudioManager } from './AdminStudioManager';
 import { AdminAccountsManager } from './AdminAccountsManager';
-import { CURRENCY_RATES } from '../data/mockData';
+import { CURRENCY_RATES } from '../data/constants';
 import { 
   ShieldCheck, 
   TrendingUp, 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Sparkles, Crown, ChevronLeft, ChevronRight, Upload } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { HERO_IMAGE_PRIMARY, HERO_IMAGE_CAMPAIGN, HABESHA_KEMIS_IMAGE } from '../data/mockData';
+import { HERO_IMAGE_PRIMARY, HERO_IMAGE_CAMPAIGN, HABESHA_KEMIS_IMAGE } from '../data/constants';
 
 interface HeroBannerProps {
   heroBannerUrl?: string;

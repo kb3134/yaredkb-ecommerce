@@ -1,7 +1,7 @@
 import React from 'react';
 import { Eye, Target } from 'lucide-react';
 import { SocialLinks } from '../types';
-import { HABESHA_KEMIS_IMAGE } from '../data/mockData';
+import { HABESHA_KEMIS_IMAGE } from '../data/constants';
 
 interface AboutUsSectionProps {
   aboutUsUrl?: string;
