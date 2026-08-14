@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', 'Noto Serif Ethiopic', 'Abyssinica SIL', Georgia, serif;
+    --font-cinzel: 'Cinzel', 'Cinzel Decorative', serif;
+    --font-cinzel-dec: 'Cinzel Decorative', 'Cinzel', serif;
+    --font-marcellus: 'Marcellus', 'Cinzel', serif;
+    --font-fidel: 'Noto Serif Ethiopic', 'Abyssinica SIL', 'Nyala', Georgia, serif;
+    --font-fidel-sans: 'Noto Sans Ethiopic', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: #181310;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+    letter-spacing: 0.05em;
+  }
+
+  .font-cinzel-dec {
+    font-family: var(--font-cinzel-dec);
+  }
+
+  .font-marcellus {
+    font-family: var(--font-marcellus);
+  }
+
+  .font-fidel {
+    font-family: var(--font-fidel);
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  .font-fidel-sans {
+    font-family: var(--font-fidel-sans);
+  }
+}
+
+/* Luxury typography styles */
+.fidel-glow {
+  text-shadow: 0 0 16px rgba(212, 175, 55, 0.4), 0 0 4px rgba(245, 215, 127, 0.6);
+}
+
+.gold-alphabet-emboss {
+  text-shadow: 0 1px 1px rgba(0,0,0,0.8), 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.letter-heritage {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.tibeb-alphabet-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-fidel);
+  background: linear-gradient(135deg, rgba(35, 27, 21, 0.95), rgba(24, 19, 16, 0.95));
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #F5D77F;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+/* Luxury micro-interactions and smooth scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B58F28;
+}
+
+/* Hide scrollbar for Chrome, Safari, Firefox */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(253, 251, 247, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-panel-dark {
+  background: rgba(24, 19, 16, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #A37F1E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+/* Smooth Entrance Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatSubtle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float-subtle {
+  animation: floatSubtle 4s ease-in-out infinite;
+}
