@@ -29,7 +29,8 @@ import {
   upsertSqlBespokeRequest,
   getSqlAdminUsers,
   upsertSqlAdminUser,
-  deleteSqlAdminUser
+  deleteSqlAdminUser,
+  isDatabaseConfigured
 } from './server/dbService';
 import { 
   detectActiveStorageProvider, 
@@ -918,6 +919,12 @@ async function loadDatabaseAsync(): Promise<void> {
   }
 
   // 2. Query Cloud SQL PostgreSQL as primary source of truth for products & persistent state
+  if (!isDatabaseConfigured()) {
+    console.log('[Database] PostgreSQL connection is not configured. Running in offline/local storage mode.');
+    saveDatabase();
+    return;
+  }
+
   try {
     const sqlProducts = await getSqlProducts();
     if (sqlProducts) {

@@ -52,6 +52,13 @@ export const createPool = () => {
   return global._postgresPool;
 };
 
+export const isDatabaseConfigured = (): boolean => {
+  const url = process.env.DATABASE_URL || process.env.SQL_URL;
+  const isRealUrl = Boolean(url && (url.startsWith('postgres://') || url.startsWith('postgresql://')));
+  const isHostConfig = Boolean(process.env.SQL_HOST && (process.env.SQL_USER || process.env.SQL_ADMIN_USER));
+  return isRealUrl || isHostConfig;
+};
+
 export const pool = createPool();
 export const db = drizzle(pool, { schema });
 export * from './schema.ts';

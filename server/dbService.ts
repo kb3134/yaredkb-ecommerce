@@ -1,6 +1,8 @@
 // server/dbService.ts
 import { eq, desc } from 'drizzle-orm';
-import { db } from '../src/db/index.ts';
+import { db, isDatabaseConfigured } from '../src/db/index.ts';
+
+export { isDatabaseConfigured };
 import { 
   products as productsTable, 
   orders as ordersTable, 
