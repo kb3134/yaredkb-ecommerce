@@ -23,6 +23,7 @@ import {
   EyeOff
 } from 'lucide-react';
 import { AdminUser } from '../types';
+import { apiFetch } from '../lib/api';
 
 interface AdminAccountsManagerProps {
   currentAdminUser: AdminUser | null;
@@ -75,7 +76,7 @@ export const AdminAccountsManager: React.FC<AdminAccountsManagerProps> = ({
   const fetchAdminAccounts = async () => {
     setIsLoading(true);
     try {
-      const res = await fetch('/api/admin/users');
+      const res = await apiFetch('/api/admin/users');
       if (res.ok) {
         const data = await res.json();
         setAdminUsers(data.users || []);
@@ -107,7 +108,7 @@ export const AdminAccountsManager: React.FC<AdminAccountsManagerProps> = ({
     setIsSubmittingCreate(true);
 
     try {
-      const res = await fetch('/api/admin/users', {
+      const res = await apiFetch('/api/admin/users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -175,7 +176,7 @@ export const AdminAccountsManager: React.FC<AdminAccountsManagerProps> = ({
     setIsSubmittingEdit(true);
 
     try {
-      const res = await fetch(`/api/admin/users/${editingUser.id}`, {
+      const res = await apiFetch(`/api/admin/users/${editingUser.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -223,7 +224,7 @@ export const AdminAccountsManager: React.FC<AdminAccountsManagerProps> = ({
     setIsSubmittingPassword(true);
 
     try {
-      const res = await fetch(`/api/admin/users/${passwordChangeTargetUser.id}/password`, {
+      const res = await apiFetch(`/api/admin/users/${passwordChangeTargetUser.id}/password`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ newPassword: changePasswordVal })
@@ -254,7 +255,7 @@ export const AdminAccountsManager: React.FC<AdminAccountsManagerProps> = ({
     const nextStatus = user.status === 'active' ? 'inactive' : 'active';
 
     try {
-      const res = await fetch(`/api/admin/users/${user.id}/status`, {
+      const res = await apiFetch(`/api/admin/users/${user.id}/status`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: nextStatus })
@@ -280,7 +281,7 @@ export const AdminAccountsManager: React.FC<AdminAccountsManagerProps> = ({
     if (!deletingUser) return;
 
     try {
-      const res = await fetch(`/api/admin/users/${deletingUser.id}`, {
+      const res = await apiFetch(`/api/admin/users/${deletingUser.id}`, {
         method: 'DELETE'
       });
 

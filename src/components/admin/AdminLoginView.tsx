@@ -17,9 +17,10 @@ import {
   LogOut
 } from 'lucide-react';
 import { AdminUser } from '../../types';
+import { apiFetch } from '../../lib/api';
 
 interface AdminLoginViewProps {
-  onLoginSuccess: (user: AdminUser) => void;
+  onLoginSuccess: (user: AdminUser, token?: string) => void;
   onBackToStore: () => void;
   logoUrl?: string;
 }
@@ -82,7 +83,7 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({
     setIsSubmitting(true);
 
     try {
-      const res = await fetch('/api/admin/login', {
+      const res = await apiFetch('/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: username.trim(), password })
@@ -98,7 +99,7 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({
 
       // Success
       setIsSubmitting(false);
-      onLoginSuccess(data.user);
+      onLoginSuccess(data.user, data.token);
     } catch (err: any) {
       console.error('Login request failed:', err);
       setLoginError(err.message || 'Unable to connect to server. Please try again.');
@@ -119,7 +120,7 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({
     setIsSubmitting(true);
 
     try {
-      const res = await fetch('/api/admin/forgot-password/initiate', {
+      const res = await apiFetch('/api/admin/forgot-password/initiate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ usernameOrEmail: forgotIdentifier.trim() })
@@ -164,7 +165,7 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({
     setIsSubmitting(true);
 
     try {
-      const res = await fetch('/api/admin/forgot-password/reset', {
+      const res = await apiFetch('/api/admin/forgot-password/reset', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

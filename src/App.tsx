@@ -19,6 +19,7 @@ import {
   AdminUser
 } from './types';
 import { DEFAULT_BRANDING_IMAGES, DEFAULT_STUDIO_CATEGORIES, CURRENCY_RATES } from './data/constants';
+import { apiFetch } from './lib/api';
 import { Header } from './components/Header';
 import { HeroBanner } from './components/HeroBanner';
 import { CategoryFilter } from './components/CategoryFilter';
@@ -112,7 +113,7 @@ export default function App() {
   const checkAdminAuth = async () => {
     setIsCheckingAdminAuth(true);
     try {
-      const res = await fetch('/api/admin/me');
+      const res = await apiFetch('/api/admin/me');
       if (res.ok) {
         const data = await res.json();
         if (data.authenticated && data.user) {
@@ -129,7 +130,10 @@ export default function App() {
     return false;
   };
 
-  const handleAdminLoginSuccess = (user: AdminUser) => {
+  const handleAdminLoginSuccess = (user: AdminUser, token?: string) => {
+    if (token) {
+      localStorage.setItem('admin_token', token);
+    }
     setCurrentAdminUser(user);
     setIsAdminMode(true);
     syncAdminRoute(true);
@@ -138,10 +142,11 @@ export default function App() {
 
   const handleAdminLogout = async () => {
     try {
-      await fetch('/api/admin/logout', { method: 'POST' });
+      await apiFetch('/api/admin/logout', { method: 'POST' });
     } catch (err) {
       console.error('Logout error:', err);
     }
+    localStorage.removeItem('admin_token');
     setCurrentAdminUser(null);
     setIsAdminMode(false);
     syncAdminRoute(false);
@@ -215,7 +220,7 @@ export default function App() {
 
   const fetchContactMessages = async () => {
     try {
-      const res = await fetch('/api/contact-messages');
+      const res = await apiFetch('/api/contact-messages');
       if (res.ok) {
         const data = await res.json();
         setContactMessages(data.messages || []);
@@ -228,7 +233,7 @@ export default function App() {
 
   const handleSubmitContactMessage = async (msgData: Omit<ContactMessage, 'id' | 'createdAt' | 'read'>) => {
     try {
-      const res = await fetch('/api/contact-messages', {
+      const res = await apiFetch('/api/contact-messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(msgData)
@@ -260,7 +265,7 @@ export default function App() {
   const handleToggleReadMessage = async (id: string, read: boolean) => {
     setContactMessages(prev => prev.map(m => m.id === id ? { ...m, read } : m));
     try {
-      await fetch(`/api/contact-messages/${id}`, {
+      await apiFetch(`/api/contact-messages/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ read })
@@ -274,7 +279,7 @@ export default function App() {
     setContactMessages(prev => prev.filter(m => m.id !== id));
     addToast('Message Deleted', 'The contact message was deleted.');
     try {
-      await fetch(`/api/contact-messages/${id}`, {
+      await apiFetch(`/api/contact-messages/${id}`, {
         method: 'DELETE'
       });
     } catch (err) {
@@ -284,7 +289,7 @@ export default function App() {
 
   const fetchBranding = async () => {
     try {
-      const res = await fetch('/api/branding');
+      const res = await apiFetch('/api/branding');
       if (res.ok) {
         const data = await res.json();
         setBrandingImages(data);
@@ -296,7 +301,7 @@ export default function App() {
 
   const fetchCurrencyRates = async () => {
     try {
-      const res = await fetch('/api/currency-rates');
+      const res = await apiFetch('/api/currency-rates');
       if (res.ok) {
         const data = await res.json();
         Object.assign(CURRENCY_RATES, data);
@@ -323,7 +328,7 @@ export default function App() {
 
   const handleUpdateBranding = async (updated: Partial<BrandingImages>) => {
     try {
-      const res = await fetch('/api/branding', {
+      const res = await apiFetch('/api/branding', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updated)
@@ -346,7 +351,7 @@ export default function App() {
 
   const fetchStudioCategories = async () => {
     try {
-      const res = await fetch('/api/studio/categories');
+      const res = await apiFetch('/api/studio/categories');
       if (res.ok) {
         const data = await res.json();
         setStudioCategories(data.categories || []);
@@ -362,7 +367,7 @@ export default function App() {
     try {
       // In admin mode, include hidden images
       const url = isAdminMode ? '/api/studio/images?includeHidden=true' : '/api/studio/images';
-      const res = await fetch(url);
+      const res = await apiFetch(url);
       if (res.ok) {
         const data = await res.json();
         setStudioImages(data.images || []);
@@ -376,7 +381,7 @@ export default function App() {
 
   const handleAddStudioImage = async (imgData: Omit<StudioImage, 'id' | 'createdAt'>) => {
     try {
-      const res = await fetch('/api/studio/images', {
+      const res = await apiFetch('/api/studio/images', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(imgData)
@@ -400,7 +405,7 @@ export default function App() {
 
   const handleEditStudioImage = async (id: string, imgData: Partial<StudioImage>) => {
     try {
-      const res = await fetch(`/api/studio/images/${id}`, {
+      const res = await apiFetch(`/api/studio/images/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(imgData)
@@ -419,7 +424,7 @@ export default function App() {
 
   const handleDeleteStudioImage = async (id: string) => {
     try {
-      const res = await fetch(`/api/studio/images/${id}`, {
+      const res = await apiFetch(`/api/studio/images/${id}`, {
         method: 'DELETE'
       });
       if (res.ok) {
@@ -436,7 +441,7 @@ export default function App() {
 
   const handleAddStudioCategory = async (catData: { name: string; description?: string }) => {
     try {
-      const res = await fetch('/api/studio/categories', {
+      const res = await apiFetch('/api/studio/categories', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(catData)
@@ -461,7 +466,7 @@ export default function App() {
 
   const handleEditStudioCategory = async (id: string, catData: { name: string; description?: string }) => {
     try {
-      const res = await fetch(`/api/studio/categories/${id}`, {
+      const res = await apiFetch(`/api/studio/categories/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(catData)
@@ -480,7 +485,7 @@ export default function App() {
 
   const handleDeleteStudioCategory = async (id: string) => {
     try {
-      const res = await fetch(`/api/studio/categories/${id}`, {
+      const res = await apiFetch(`/api/studio/categories/${id}`, {
         method: 'DELETE'
       });
       if (res.ok) {
@@ -508,7 +513,7 @@ export default function App() {
 
   const handleReorderStudioImages = async (items: { id: string; orderIndex: number }[]) => {
     try {
-      const res = await fetch('/api/studio/images/reorder', {
+      const res = await apiFetch('/api/studio/images/reorder', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items })
@@ -534,7 +539,7 @@ export default function App() {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch('/api/products');
+      const res = await apiFetch('/api/products');
       if (res.ok) {
         const data = await res.json();
         setProducts(data.products || []);
@@ -547,7 +552,7 @@ export default function App() {
 
   const fetchOrders = async () => {
     try {
-      const res = await fetch('/api/orders');
+      const res = await apiFetch('/api/orders');
       if (res.ok) {
         const data = await res.json();
         setOrders(data.orders || []);
@@ -560,7 +565,7 @@ export default function App() {
 
   const fetchBespokeRequests = async () => {
     try {
-      const res = await fetch('/api/bespoke-fittings');
+      const res = await apiFetch('/api/bespoke-fittings');
       if (res.ok) {
         const data = await res.json();
         setBespokeRequests(data.requests || []);
@@ -573,7 +578,7 @@ export default function App() {
 
   const fetchAnalytics = async () => {
     try {
-      const res = await fetch('/api/admin/analytics');
+      const res = await apiFetch('/api/admin/analytics');
       if (res.ok) {
         const data = await res.json();
         setAnalytics(data);
@@ -680,7 +685,7 @@ export default function App() {
   // Place Order API call
   const handlePlaceOrder = async (orderPayload: any) => {
     try {
-      const res = await fetch('/api/orders', {
+      const res = await apiFetch('/api/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(orderPayload)
@@ -754,7 +759,7 @@ export default function App() {
   const handleUpdateOrderStatus = async (orderId: string, status: string) => {
     setOrders(prev => prev.map(o => o.id === orderId ? { ...o, status: status as any } : o));
     try {
-      const res = await fetch(`/api/orders/${orderId}/status`, {
+      const res = await apiFetch(`/api/orders/${orderId}/status`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status })
@@ -774,7 +779,7 @@ export default function App() {
   const handleUpdateOrderDetails = async (orderId: string, updatedFields: any) => {
     setOrders(prev => prev.map(o => o.id === orderId ? { ...o, ...updatedFields } : o));
     try {
-      const res = await fetch(`/api/orders/${orderId}`, {
+      const res = await apiFetch(`/api/orders/${orderId}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedFields)
@@ -793,7 +798,7 @@ export default function App() {
   // Submit Bespoke Request API call
   const handleSubmitBespoke = async (payload: any) => {
     try {
-      const res = await fetch('/api/bespoke-fittings', {
+      const res = await apiFetch('/api/bespoke-fittings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -826,7 +831,7 @@ export default function App() {
     addToast('Piece Added to Catalog', pData.name);
 
     try {
-      const res = await fetch('/api/products', {
+      const res = await apiFetch('/api/products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(pData)
@@ -848,7 +853,7 @@ export default function App() {
     addToast('Piece Details Updated', pData.name || 'Updated');
 
     try {
-      const res = await fetch(`/api/products/${id}`, {
+      const res = await apiFetch(`/api/products/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(pData)
@@ -870,7 +875,7 @@ export default function App() {
     addToast('Piece Removed from Inventory');
 
     try {
-      const res = await fetch(`/api/products/${id}`, {
+      const res = await apiFetch(`/api/products/${id}`, {
         method: 'DELETE'
       });
       if (res.ok) {
@@ -886,7 +891,7 @@ export default function App() {
 
   const handleAdminUpdateBespokeStatus = async (id: string, status: string, weaverId?: string) => {
     try {
-      const res = await fetch(`/api/bespoke-fittings/${id}`, {
+      const res = await apiFetch(`/api/bespoke-fittings/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status, assignedWeaverId: weaverId })

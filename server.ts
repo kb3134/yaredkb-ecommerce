@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import crypto from 'crypto';
 import path from 'path';
 import fs from 'fs';
@@ -42,6 +43,17 @@ import {
 } from './server/cloudStorage';
 
 const app = express();
+
+app.use(cors({
+  origin: (origin, callback) => {
+    // Dynamically allow requesting origin to support local dev, Vercel deployments, etc.
+    callback(null, true);
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']
+}));
+
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 

@@ -1,12 +1,21 @@
 {
   "version": 2,
+  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/api/(.*)",
+      "source": "/api/:path*",
       "destination": "/api"
     },
     {
-      "source": "/(.*)",
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/((?!api|assets|favicon|logo).*)",
       "destination": "/index.html"
     }
   ]

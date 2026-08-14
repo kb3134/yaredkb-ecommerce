@@ -4,6 +4,7 @@ import { isProductInCollection } from './StudioStoreCatalog';
 import { AdminStudioManager } from './AdminStudioManager';
 import { AdminAccountsManager } from './AdminAccountsManager';
 import { CURRENCY_RATES } from '../data/constants';
+import { apiFetch } from '../lib/api';
 import { 
   ShieldCheck, 
   TrendingUp, 
@@ -227,7 +228,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
   const fetchGitHubConfig = async () => {
     try {
-      const res = await fetch('/api/storage/github-config');
+      const res = await apiFetch('/api/storage/github-config');
       if (res.ok) {
         const data = await res.json();
         if (data.owner) setGithubOwnerInput(data.owner);
@@ -249,7 +250,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       if (githubRepoInput) payload.repo = githubRepoInput;
       if (githubBranchInput) payload.branch = githubBranchInput;
 
-      const res = await fetch('/api/storage/test-github', {
+      const res = await apiFetch('/api/storage/test-github', {
         method: customToken ? 'POST' : 'GET',
         headers: customToken ? { 'Content-Type': 'application/json' } : undefined,
         body: customToken ? JSON.stringify(payload) : undefined
@@ -282,7 +283,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     setGithubConfigNotice(null);
 
     try {
-      const res = await fetch('/api/storage/github-config', {
+      const res = await apiFetch('/api/storage/github-config', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -335,7 +336,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const res = await fetch('/api/currency-rates');
+        const res = await apiFetch('/api/currency-rates');
         if (res.ok) {
           const data = await res.json();
           if (data && data.ETB) {
@@ -536,7 +537,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   const handleSyncAllCollectionImages = async () => {
     setIsSyncingAllImages(true);
     try {
-      const res = await fetch('/api/storage/migrate-all', { method: 'POST' });
+      const res = await apiFetch('/api/storage/migrate-all', { method: 'POST' });
       const data = await res.json();
       if (data.success) {
         addToast('GitHub Cloud Sync Complete', `Synced ${data.migratedCount || 0} collection images to GitHub repository kb3134/yaredkb-ecommerce.`);
@@ -2908,7 +2909,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           setIsUploadingProductImage(true);
                           handleFileUpload(file, async (dataUrl) => {
                             try {
-                              const res = await fetch('/api/upload', {
+                              const res = await apiFetch('/api/upload', {
                                 method: 'POST',
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify({
@@ -2953,7 +2954,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         setPNewImageUrl('');
                         setIsUploadingProductImage(true);
                         try {
-                          const res = await fetch('/api/upload', {
+                          const res = await apiFetch('/api/upload', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({
