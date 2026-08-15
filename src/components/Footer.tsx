@@ -41,12 +41,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, logoUrl }) => {
             </p>
 
             <a 
-              href="https://yaredtibeb.com" 
+              href="https://yared-tibeb.web" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block text-xs font-bold font-serif tracking-widest text-[#D4AF37] uppercase hover:underline"
             >
-              YAREDTIBEB.COM
+              YARED-TIBEB.WEB
             </a>
           </div>
 
