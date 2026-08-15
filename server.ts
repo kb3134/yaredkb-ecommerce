@@ -1930,33 +1930,46 @@ app.post('/api/products', async (req, res) => {
   const rawDestinations: string[] = Array.isArray(req.body.destinations) ? req.body.destinations : [];
   const rawCollections: string[] = Array.isArray(req.body.collections) ? req.body.collections : [];
 
-  const isLiveshowUpload = rawDestinations.includes('liveshow') ||
-    rawCollections.includes('liveshow') ||
-    req.body.destination === 'liveshow' ||
-    req.body.isLiveshow === true;
+  // Determine primary destination exclusively
+  let isStudioUpload = false;
+  let isLiveshowUpload = false;
+  let isCollectionUpload = false;
 
-  const isStudioUpload = rawDestinations.includes('studio') ||
-    rawCollections.includes('studio') ||
-    rawCollections.includes('studio-only') ||
-    Boolean(req.body.studioCategory && req.body.studioCategory.trim() !== '') ||
-    req.body.category === 'studio' ||
-    req.body.destination === 'studio';
-
-  const isCollectionUpload = rawDestinations.includes('collection') ||
-    rawCollections.includes('collection') ||
-    (!isLiveshowUpload && !isStudioUpload) ||
-    rawCollections.some(c => c !== 'liveshow' && c !== 'studio' && c !== 'studio-only');
+  if (rawDestinations.includes('studio') || req.body.destination === 'studio' || req.body.category === 'studio' || rawCollections.includes('studio')) {
+    isStudioUpload = true;
+  } else if (rawDestinations.includes('liveshow') || req.body.destination === 'liveshow' || req.body.isLiveshow === true || rawCollections.includes('liveshow')) {
+    isLiveshowUpload = true;
+  } else {
+    isCollectionUpload = true;
+  }
 
   const finalCollectionsSet = new Set<string>();
   const category = req.body.category || 'wedding';
-  finalCollectionsSet.add(category);
 
-  if (isCollectionUpload) finalCollectionsSet.add('collection');
-  if (isLiveshowUpload) finalCollectionsSet.add('liveshow');
-  if (isStudioUpload) finalCollectionsSet.add('studio');
+  if (isStudioUpload) {
+    finalCollectionsSet.add('studio');
+    if (category !== 'collection' && category !== 'liveshow') {
+      finalCollectionsSet.add(category);
+    }
+  } else if (isLiveshowUpload) {
+    finalCollectionsSet.add('liveshow');
+    if (category !== 'collection' && category !== 'studio') {
+      finalCollectionsSet.add(category);
+    }
+  } else {
+    finalCollectionsSet.add('collection');
+    if (category !== 'liveshow' && category !== 'studio') {
+      finalCollectionsSet.add(category);
+    }
+  }
 
   for (const c of rawCollections) {
-    if (c) finalCollectionsSet.add(c);
+    if (c) {
+      if (isStudioUpload && (c === 'collection' || c === 'liveshow')) continue;
+      if (isLiveshowUpload && (c === 'collection' || c === 'studio')) continue;
+      if (isCollectionUpload && (c === 'liveshow' || c === 'studio')) continue;
+      finalCollectionsSet.add(c);
+    }
   }
 
   const finalCollections = Array.from(finalCollectionsSet);
@@ -2029,33 +2042,46 @@ app.put('/api/products/:id', async (req, res) => {
   const rawDestinations: string[] = Array.isArray(req.body.destinations) ? req.body.destinations : [];
   const rawCollections: string[] = Array.isArray(req.body.collections) ? req.body.collections : [];
 
-  const isLiveshowUpload = rawDestinations.includes('liveshow') ||
-    rawCollections.includes('liveshow') ||
-    req.body.destination === 'liveshow' ||
-    req.body.isLiveshow === true;
+  // Determine primary destination exclusively
+  let isStudioUpload = false;
+  let isLiveshowUpload = false;
+  let isCollectionUpload = false;
 
-  const isStudioUpload = rawDestinations.includes('studio') ||
-    rawCollections.includes('studio') ||
-    rawCollections.includes('studio-only') ||
-    Boolean(req.body.studioCategory && req.body.studioCategory.trim() !== '') ||
-    req.body.category === 'studio' ||
-    req.body.destination === 'studio';
-
-  const isCollectionUpload = rawDestinations.includes('collection') ||
-    rawCollections.includes('collection') ||
-    (!isLiveshowUpload && !isStudioUpload) ||
-    rawCollections.some(c => c !== 'liveshow' && c !== 'studio' && c !== 'studio-only');
+  if (rawDestinations.includes('studio') || req.body.destination === 'studio' || req.body.category === 'studio' || rawCollections.includes('studio')) {
+    isStudioUpload = true;
+  } else if (rawDestinations.includes('liveshow') || req.body.destination === 'liveshow' || req.body.isLiveshow === true || rawCollections.includes('liveshow')) {
+    isLiveshowUpload = true;
+  } else {
+    isCollectionUpload = true;
+  }
 
   const category = req.body.category || existingProduct.category || 'wedding';
   const finalCollectionsSet = new Set<string>();
-  finalCollectionsSet.add(category);
 
-  if (isCollectionUpload) finalCollectionsSet.add('collection');
-  if (isLiveshowUpload) finalCollectionsSet.add('liveshow');
-  if (isStudioUpload) finalCollectionsSet.add('studio');
+  if (isStudioUpload) {
+    finalCollectionsSet.add('studio');
+    if (category !== 'collection' && category !== 'liveshow') {
+      finalCollectionsSet.add(category);
+    }
+  } else if (isLiveshowUpload) {
+    finalCollectionsSet.add('liveshow');
+    if (category !== 'collection' && category !== 'studio') {
+      finalCollectionsSet.add(category);
+    }
+  } else {
+    finalCollectionsSet.add('collection');
+    if (category !== 'liveshow' && category !== 'studio') {
+      finalCollectionsSet.add(category);
+    }
+  }
 
   for (const c of rawCollections) {
-    if (c) finalCollectionsSet.add(c);
+    if (c) {
+      if (isStudioUpload && (c === 'collection' || c === 'liveshow')) continue;
+      if (isLiveshowUpload && (c === 'collection' || c === 'studio')) continue;
+      if (isCollectionUpload && (c === 'liveshow' || c === 'studio')) continue;
+      finalCollectionsSet.add(c);
+    }
   }
 
   const finalCollections = Array.from(finalCollectionsSet);

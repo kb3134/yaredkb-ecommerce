@@ -566,9 +566,19 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     const isStudioTarget = targetDestination === 'studio' || targetCategory === 'studio';
     const isLiveshowTarget = targetDestination === 'liveshow' || targetCategory === 'liveshow';
 
-    setDestCollection(true);
-    setDestLiveShow(isLiveshowTarget);
-    setDestStudio(isStudioTarget);
+    if (isStudioTarget) {
+      setDestStudio(true);
+      setDestCollection(false);
+      setDestLiveShow(false);
+    } else if (isLiveshowTarget) {
+      setDestStudio(false);
+      setDestCollection(false);
+      setDestLiveShow(true);
+    } else {
+      setDestStudio(false);
+      setDestCollection(true);
+      setDestLiveShow(false);
+    }
 
     const defaultStudio = studioCategories && studioCategories.length > 0 ? studioCategories[0].slug : 'traditional-dresses';
     setPStudioCategory(defaultStudio);
@@ -693,10 +703,22 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     const isInStock = pStatus === 'In Stock' && Number(pStock) > 0;
 
     const finalCollectionsSet = new Set<string>();
-    if (pCategory) finalCollectionsSet.add(pCategory);
-    if (destCollection) finalCollectionsSet.add('collection');
-    if (destLiveShow) finalCollectionsSet.add('liveshow');
-    if (destStudio) finalCollectionsSet.add('studio');
+    if (destStudio) {
+      finalCollectionsSet.add('studio');
+      if (pCategory && pCategory !== 'collection' && pCategory !== 'liveshow') {
+        finalCollectionsSet.add(pCategory);
+      }
+    } else if (destLiveShow) {
+      finalCollectionsSet.add('liveshow');
+      if (pCategory && pCategory !== 'collection' && pCategory !== 'studio') {
+        finalCollectionsSet.add(pCategory);
+      }
+    } else {
+      finalCollectionsSet.add('collection');
+      if (pCategory && pCategory !== 'liveshow' && pCategory !== 'studio') {
+        finalCollectionsSet.add(pCategory);
+      }
+    }
 
     const finalStudioCategory = destStudio ? (pStudioCategory || pCategory || 'traditional-dresses') : '';
 
@@ -2585,13 +2607,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
             <form onSubmit={handleSaveProduct} className="space-y-4 text-xs">
               
-              {/* Target Upload Destination Switcher (Multi-Select) */}
+              {/* Target Upload Destination Switcher (Mutually Exclusive - Radio Mode) */}
               <div className="bg-[#FAF6ED] p-3.5 rounded-2xl border border-[#D4AF37]/40 space-y-2">
                 <div className="flex items-center justify-between">
                   <label className="font-serif font-bold text-xs text-[#231B15] uppercase tracking-wider flex items-center gap-1.5">
-                    <span>Target Upload Destinations</span>
+                    <span>Target Upload Destination</span>
                     <span className="text-[10px] text-[#B8860B] font-mono font-semibold">
-                      (Select one or multiple sections)
+                      (Select exactly one exclusive destination)
                     </span>
                   </label>
                 </div>
@@ -2600,8 +2622,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   <button
                     type="button"
                     onClick={() => {
-                      if (destCollection && !destLiveShow && !destStudio) return;
-                      setDestCollection(!destCollection);
+                      setDestCollection(true);
+                      setDestLiveShow(false);
+                      setDestStudio(false);
                     }}
                     className={`p-3 rounded-xl text-xs font-serif font-bold transition flex flex-col items-start gap-1 cursor-pointer text-left border relative ${
                       destCollection
@@ -2614,8 +2637,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         <FolderPlus className={`w-4 h-4 shrink-0 ${destCollection ? 'text-[#D4AF37]' : 'text-gray-400'}`} />
                         <span>1. Collection</span>
                       </div>
-                      <div className={`w-4 h-4 rounded border flex items-center justify-center ${destCollection ? 'border-[#D4AF37] bg-[#D4AF37] text-[#181310]' : 'border-gray-300'}`}>
-                        {destCollection && <Check className="w-3 h-3 stroke-[3]" />}
+                      <div className={`w-4 h-4 rounded-full border flex items-center justify-center ${destCollection ? 'border-[#D4AF37] bg-[#D4AF37] text-[#181310]' : 'border-gray-300'}`}>
+                        {destCollection && <div className="w-1.5 h-1.5 rounded-full bg-[#181310]" />}
                       </div>
                     </div>
                     <div className="text-[10px] font-sans font-normal opacity-80 leading-tight">
@@ -2627,10 +2650,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   <button
                     type="button"
                     onClick={() => {
-                      if (destStudio && !destCollection && !destLiveShow) return;
-                      const next = !destStudio;
-                      setDestStudio(next);
-                      if (next && (!pStudioCategory || pStudioCategory === '')) {
+                      setDestCollection(false);
+                      setDestLiveShow(false);
+                      setDestStudio(true);
+                      if (!pStudioCategory || pStudioCategory === '') {
                         const defaultStudio = studioCategories && studioCategories.length > 0 ? studioCategories[0].slug : 'traditional-dresses';
                         setPStudioCategory(defaultStudio);
                       }
@@ -2646,8 +2669,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         <Sparkles className={`w-4 h-4 shrink-0 ${destStudio ? 'text-[#D4AF37]' : 'text-gray-400'}`} />
                         <span>2. Studio</span>
                       </div>
-                      <div className={`w-4 h-4 rounded border flex items-center justify-center ${destStudio ? 'border-[#D4AF37] bg-[#D4AF37] text-[#181310]' : 'border-gray-300'}`}>
-                        {destStudio && <Check className="w-3 h-3 stroke-[3]" />}
+                      <div className={`w-4 h-4 rounded-full border flex items-center justify-center ${destStudio ? 'border-[#D4AF37] bg-[#D4AF37] text-[#181310]' : 'border-gray-300'}`}>
+                        {destStudio && <div className="w-1.5 h-1.5 rounded-full bg-[#181310]" />}
                       </div>
                     </div>
                     <div className="text-[10px] font-sans font-normal opacity-80 leading-tight">
@@ -2659,8 +2682,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   <button
                     type="button"
                     onClick={() => {
-                      if (destLiveShow && !destCollection && !destStudio) return;
-                      setDestLiveShow(!destLiveShow);
+                      setDestCollection(false);
+                      setDestLiveShow(true);
+                      setDestStudio(false);
                     }}
                     className={`p-3 rounded-xl text-xs font-serif font-bold transition flex flex-col items-start gap-1 cursor-pointer text-left border relative ${
                       destLiveShow
@@ -2673,8 +2697,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         <Upload className={`w-4 h-4 shrink-0 ${destLiveShow ? 'text-[#181310]' : 'text-gray-400'}`} />
                         <span>3. Live Showcase</span>
                       </div>
-                      <div className={`w-4 h-4 rounded border flex items-center justify-center ${destLiveShow ? 'border-[#181310] bg-[#181310] text-[#D4AF37]' : 'border-gray-300'}`}>
-                        {destLiveShow && <Check className="w-3 h-3 stroke-[3]" />}
+                      <div className={`w-4 h-4 rounded-full border flex items-center justify-center ${destLiveShow ? 'border-[#181310] bg-[#181310] text-[#D4AF37]' : 'border-gray-300'}`}>
+                        {destLiveShow && <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />}
                       </div>
                     </div>
                     <div className="text-[10px] font-sans font-normal opacity-80 leading-tight">
