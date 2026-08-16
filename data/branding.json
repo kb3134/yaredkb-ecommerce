@@ -1,0 +1,33 @@
+{
+  "logoUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-logo-1786812588276-c23a19.jpg",
+  "officialLogoUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-logo-1786729096789-cf9b08.jpg",
+  "footerLogoUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-logo-1786729096789-cf9b08.jpg",
+  "faviconUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-favicon-1786729098918-fd1e8f.jpg",
+  "heroBannerUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-primary.jpg",
+  "heroSecondaryUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-secondary.jpg",
+  "heroTertiaryUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-tertiary.jpg",
+  "aboutUsUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/about-us-1786812636014-095258.jpg",
+  "craftsmanshipUrl": "",
+  "promotionalBannerUrl": "",
+  "lookbookUrls": [
+    "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-1-1786729108738-a50fe7.jpg",
+    "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-2-1786729110930-0a2d62.jpg",
+    "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-3-1786729112932-23d77e.jpg",
+    "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-4-1786729114659-d1b710.jpg"
+  ],
+  "socialLinks": {
+    "tiktok": "https://www.tiktok.com/@yared_tibeb_",
+    "facebook": "https://www.facebook.com/share/1FvXdXCEnC/",
+    "telegram": "https://t.me/+251923095380",
+    "instagram": "https://www.instagram.com/yared_tibeb?igsh=MW5hNXI5NXQyd3Q4NA=="
+  },
+  "heroBannerBadge": "100% ROYAL HERITAGE",
+  "heroBannerTitle": "Master Handwoven Shemma",
+  "heroBannerSubtitle": "Pure Cotton & Metallic Gold Thread · Addis Ababa Weavers",
+  "heroSecondaryBadge": "EMPRESS COUTURE",
+  "heroSecondaryTitle": "Royal AXUM Chevron Design",
+  "heroSecondarySubtitle": "Hand-embroidered Tibeb Motifs · Custom Atelier Fitting",
+  "heroTertiaryBadge": "BESPOKE BRIDAL",
+  "heroTertiaryTitle": "Hand-crafted Kemis Gowns",
+  "heroTertiarySubtitle": "5+ Years of Loom Legacy & Tradition"
+}
