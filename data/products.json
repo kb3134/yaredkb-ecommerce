@@ -1,0 +1,187 @@
+[
+  {
+    "id": "hk-1786821846708",
+    "name": "zxcvbnm",
+    "amharicName": "",
+    "category": "wedding",
+    "collections": [
+      "wedding",
+      "collection"
+    ],
+    "priceUSD": 1850,
+    "rating": 5,
+    "reviewsCount": 1,
+    "inStock": true,
+    "stockQuantity": 10,
+    "isFeatured": false,
+    "isNewArrival": true,
+    "isBespokeAvailable": true,
+    "tibebPattern": "",
+    "fabric": "",
+    "weaverRegion": "",
+    "images": [
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/collection-1786821831375-1786821837022-949176.jpg"
+    ],
+    "description": "ASDFGHJK",
+    "details": [],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White & Gold"
+    ],
+    "weavingDays": 10,
+    "studioCategory": ""
+  },
+  {
+    "id": "hk-1786820415647",
+    "name": "asdfghj",
+    "amharicName": "",
+    "category": "wedding",
+    "collections": [
+      "wedding",
+      "studio"
+    ],
+    "priceUSD": 1850,
+    "rating": 5,
+    "reviewsCount": 1,
+    "inStock": true,
+    "stockQuantity": 10,
+    "isFeatured": false,
+    "isNewArrival": true,
+    "isBespokeAvailable": true,
+    "tibebPattern": "",
+    "fabric": "",
+    "weaverRegion": "",
+    "images": [
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/asdfghj-1786820438395-1786820444042-251bdb.jpg"
+    ],
+    "description": "asdfgh",
+    "details": [],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White & Gold"
+    ],
+    "weavingDays": 10,
+    "studioCategory": "wedding"
+  },
+  {
+    "id": "hk-1786820349608",
+    "name": "QWERTY",
+    "amharicName": "",
+    "category": "wedding",
+    "collections": [
+      "wedding",
+      "liveshow"
+    ],
+    "priceUSD": 1850,
+    "rating": 5,
+    "reviewsCount": 1,
+    "inStock": true,
+    "stockQuantity": 10,
+    "isFeatured": true,
+    "isNewArrival": true,
+    "isBespokeAvailable": true,
+    "tibebPattern": "",
+    "fabric": "",
+    "weaverRegion": "",
+    "images": [
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/qwerty-1786820332807-1786820337413-8a5edd.jpg"
+    ],
+    "description": "SDFGHJK",
+    "details": [],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White & Gold"
+    ],
+    "weavingDays": 10,
+    "studioCategory": ""
+  },
+  {
+    "id": "hk-1786818251924",
+    "name": "asdfghj",
+    "amharicName": "",
+    "category": "wedding",
+    "collections": [
+      "wedding",
+      "studio"
+    ],
+    "priceUSD": 1850,
+    "rating": 5,
+    "reviewsCount": 1,
+    "inStock": true,
+    "stockQuantity": 10,
+    "isFeatured": false,
+    "isNewArrival": true,
+    "isBespokeAvailable": true,
+    "tibebPattern": "",
+    "fabric": "",
+    "weaverRegion": "",
+    "images": [
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/asdfghj-1786818225382-1786818229673-8f6895.jpg"
+    ],
+    "description": "ASDFGHJ",
+    "details": [],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White & Gold"
+    ],
+    "weavingDays": 10,
+    "studioCategory": "wedding"
+  },
+  {
+    "id": "hk-1786812768229",
+    "name": "sdfghjkl;",
+    "amharicName": "",
+    "category": "wedding",
+    "collections": [
+      "wedding",
+      "collection"
+    ],
+    "priceUSD": 1850,
+    "rating": 5,
+    "reviewsCount": 1,
+    "inStock": true,
+    "stockQuantity": 10,
+    "isFeatured": false,
+    "isNewArrival": true,
+    "isBespokeAvailable": true,
+    "tibebPattern": "",
+    "fabric": "",
+    "weaverRegion": "",
+    "images": [
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/sdfghjkl-1786812753311-1786812758737-891081.jpg"
+    ],
+    "description": "sdfghj",
+    "details": [],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White & Gold"
+    ],
+    "weavingDays": 10,
+    "studioCategory": ""
+  }
+]
