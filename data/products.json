@@ -20,7 +20,7 @@
     "fabric": "",
     "weaverRegion": "",
     "images": [
-      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/zxcvbkl-1786926997787-1786927004591-76838e.jpg"
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/zxcvbkl-1786927048989-1786927054811-d108bf.jpg"
     ],
     "description": "ASDFGHJ",
     "details": [],
@@ -34,7 +34,10 @@
       "White & Gold"
     ],
     "weavingDays": 10,
-    "studioCategory": ""
+    "studioCategory": "",
+    "destinations": [
+      "liveshow"
+    ]
   },
   {
     "id": "hk-1786821846708",
