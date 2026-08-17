@@ -1,5 +1,42 @@
 [
   {
+    "id": "hk-1786927012733",
+    "name": "Zxcvbkl",
+    "amharicName": "",
+    "category": "wedding",
+    "collections": [
+      "liveshow",
+      "wedding"
+    ],
+    "priceUSD": 1850,
+    "rating": 5,
+    "reviewsCount": 1,
+    "inStock": true,
+    "stockQuantity": 10,
+    "isFeatured": true,
+    "isNewArrival": true,
+    "isBespokeAvailable": true,
+    "tibebPattern": "",
+    "fabric": "",
+    "weaverRegion": "",
+    "images": [
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/zxcvbkl-1786926997787-1786927004591-76838e.jpg"
+    ],
+    "description": "ASDFGHJ",
+    "details": [],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White & Gold"
+    ],
+    "weavingDays": 10,
+    "studioCategory": ""
+  },
+  {
     "id": "hk-1786821846708",
     "name": "zxcvbnm",
     "amharicName": "",
