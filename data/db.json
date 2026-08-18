@@ -1,0 +1,1009 @@
+{
+  "orders": [],
+  "bespoke": [],
+  "branding": {
+    "logoUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-logo-1786812588276-c23a19.jpg",
+    "officialLogoUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-logo-1786729096789-cf9b08.jpg",
+    "footerLogoUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-logo-1786729096789-cf9b08.jpg",
+    "faviconUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/brand-favicon-1786729098918-fd1e8f.jpg",
+    "heroBannerUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-primary.jpg",
+    "heroSecondaryUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-secondary.jpg",
+    "heroTertiaryUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-tertiary.jpg",
+    "aboutUsUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/about-us-1786812636014-095258.jpg",
+    "craftsmanshipUrl": "",
+    "promotionalBannerUrl": "",
+    "lookbookUrls": [
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-1-1786729108738-a50fe7.jpg",
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-2-1786729110930-0a2d62.jpg",
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-3-1786729112932-23d77e.jpg",
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/lookbook-4-1786729114659-d1b710.jpg"
+    ],
+    "socialLinks": {
+      "tiktok": "https://www.tiktok.com/@yared_tibeb_",
+      "facebook": "https://www.facebook.com/share/1FvXdXCEnC/",
+      "telegram": "https://t.me/+251923095380",
+      "instagram": "https://www.instagram.com/yared_tibeb?igsh=MW5hNXI5NXQyd3Q4NA=="
+    },
+    "heroBannerBadge": "100% ROYAL HERITAGE",
+    "heroBannerTitle": "Master Handwoven Shemma",
+    "heroBannerSubtitle": "Pure Cotton & Metallic Gold Thread · Addis Ababa Weavers",
+    "heroSecondaryBadge": "EMPRESS COUTURE",
+    "heroSecondaryTitle": "Royal AXUM Chevron Design",
+    "heroSecondarySubtitle": "Hand-embroidered Tibeb Motifs · Custom Atelier Fitting",
+    "heroTertiaryBadge": "BESPOKE BRIDAL",
+    "heroTertiaryTitle": "Hand-crafted Kemis Gowns",
+    "heroTertiarySubtitle": "5+ Years of Loom Legacy & Tradition"
+  },
+  "contactMessages": [],
+  "studioCategories": [
+    {
+      "id": "sc-wedding",
+      "name": "Wedding",
+      "slug": "wedding",
+      "description": "Royal Habesha bridal and groom wedding attire"
+    },
+    {
+      "id": "sc-mens",
+      "name": "Men's",
+      "slug": "mens",
+      "description": "Bespoke Men’s Kuta, suits, and ceremonial wear"
+    },
+    {
+      "id": "sc-womens",
+      "name": "Women's",
+      "slug": "womens",
+      "description": "Handmade luxury Habesha Kemis gowns"
+    },
+    {
+      "id": "sc-family",
+      "name": "Family",
+      "slug": "family",
+      "description": "Matching family traditional ensemble sets"
+    },
+    {
+      "id": "sc-baby",
+      "name": "Baby",
+      "slug": "baby",
+      "description": "Artisanal traditional wear for children & infants"
+    },
+    {
+      "id": "sc-traditional-dresses",
+      "name": "Traditional Dresses",
+      "slug": "traditional-dresses",
+      "description": "Heritage Ethiopian hand-woven dresses & robes"
+    },
+    {
+      "id": "sc-modern-traditional",
+      "name": "Modern Traditional Wear",
+      "slug": "modern-traditional-wear",
+      "description": "Contemporary runway Ethiopian fashion blends"
+    },
+    {
+      "id": "sc-accessories",
+      "name": "Accessories",
+      "slug": "accessories",
+      "description": "Traditional Meskel crosses, Lemat baskets & leather crafts"
+    },
+    {
+      "id": "sc-jewelry",
+      "name": "Jewelry",
+      "slug": "jewelry",
+      "description": "24K gold-plated Ethiopian filigree jewelry sets"
+    },
+    {
+      "id": "sc-scarves",
+      "name": "Scarves",
+      "slug": "scarves",
+      "description": "Hand-woven Netela and Gabi scarves & shawls"
+    },
+    {
+      "id": "sc-cultural-events",
+      "name": "Cultural Events",
+      "slug": "cultural-events",
+      "description": "Enkutatash, Genna, Meskel & Timkat festival couture"
+    },
+    {
+      "id": "sc-behind-the-scenes",
+      "name": "Behind the Scenes",
+      "slug": "behind-the-scenes",
+      "description": "Shiro Meda Master Weavers at work on the looms"
+    }
+  ],
+  "studioImages": [
+    {
+      "id": "st-001",
+      "title": "Empress Taytu Royal Bridal Kemis Lookbook",
+      "description": "Highland hand-loomed white cotton gown with multi-paneled 24K gold leaf Axum geometric border",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/empress-taytu-royal-bridal-kemis-1-1786729075388-5b1d74.jpg",
+      "categories": [
+        "wedding",
+        "womens",
+        "traditional-dresses"
+      ],
+      "tags": [
+        "bridal",
+        "gold-thread",
+        "habesha-kemis",
+        "shiro-meda"
+      ],
+      "isFeatured": true,
+      "isHidden": false,
+      "orderIndex": 1,
+      "createdAt": "2026-08-14T18:47:16.760Z",
+      "productIds": [
+        "prod-001"
+      ]
+    },
+    {
+      "id": "st-002",
+      "title": "Emperor Menelik Diplomatic Kuta & Suit",
+      "description": "Bespoke male ceremonial outfit pairing heavy gold thread Kuta shawl with tailored high-neck tunic",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/emperor-menelik-royal-kuta-suit-1-1786729079635-62e7d9.jpg",
+      "categories": [
+        "mens",
+        "cultural-events"
+      ],
+      "tags": [
+        "menswear",
+        "kuta",
+        "gold-embroidery",
+        "royal"
+      ],
+      "isFeatured": true,
+      "isHidden": false,
+      "orderIndex": 2,
+      "createdAt": "2026-08-14T18:47:16.775Z",
+      "productIds": [
+        "prod-002"
+      ]
+    },
+    {
+      "id": "st-003",
+      "title": "Gondar Heritage Queen Zewditu Silk Gown",
+      "description": "Double-sided silk thread embroidery with classic Gondar rosette motifs on pure organic white cotton",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/empress-taytu-royal-bridal-kemis-2-1786729077630-0191fb.jpg",
+      "categories": [
+        "womens",
+        "traditional-dresses"
+      ],
+      "tags": [
+        "gondar",
+        "silk-embroidery",
+        "kemis-gown"
+      ],
+      "isFeatured": true,
+      "isHidden": false,
+      "orderIndex": 3,
+      "createdAt": "2026-08-14T18:47:16.788Z",
+      "productIds": [
+        "prod-003"
+      ]
+    },
+    {
+      "id": "st-004",
+      "title": "Oromia Queen Siinqee Traditional Ceremonial Couture",
+      "description": "Vibrant hand-beaded geometric necklines and deep red woven bands with ceremonial accessory set",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/oromia-queen-siinqee-heritage-dress-1-1786729083889-b46f21.jpg",
+      "categories": [
+        "womens",
+        "traditional-dresses",
+        "cultural-events"
+      ],
+      "tags": [
+        "oromo",
+        "siinqee",
+        "beadwork",
+        "heritage"
+      ],
+      "isFeatured": true,
+      "isHidden": false,
+      "orderIndex": 4,
+      "createdAt": "2026-08-14T18:47:16.800Z",
+      "productIds": [
+        "prod-004"
+      ]
+    },
+    {
+      "id": "st-005",
+      "title": "24K Gold Filigree Axumite Jewelry Set",
+      "description": "Authentic handcrafted Ethiopian gold filigree Meskel cross necklace and matching drop earrings",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/axumite-24k-gold-filigree-jewelry-set-1-1786729086171-d03acc.jpg",
+      "categories": [
+        "jewelry",
+        "accessories"
+      ],
+      "tags": [
+        "gold",
+        "jewelry",
+        "meskel-cross",
+        "axum"
+      ],
+      "isFeatured": true,
+      "isHidden": false,
+      "orderIndex": 5,
+      "createdAt": "2026-08-14T18:47:16.813Z",
+      "productIds": [
+        "prod-005"
+      ]
+    },
+    {
+      "id": "st-006",
+      "title": "Imperial Family Matching Ensemble Set",
+      "description": "Bespoke synchronized family Habesha Kemis & Kuta outfits for weddings and cultural celebrations",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/imperial-family-matching-habesha-kemis-s-1786729088216-ddc2cf.jpg",
+      "categories": [
+        "family",
+        "wedding",
+        "baby"
+      ],
+      "tags": [
+        "family-set",
+        "matching",
+        "habesha",
+        "wedding"
+      ],
+      "isFeatured": true,
+      "isHidden": false,
+      "orderIndex": 6,
+      "createdAt": "2026-08-14T18:47:16.826Z",
+      "productIds": [
+        "prod-006",
+        "prod-008"
+      ]
+    },
+    {
+      "id": "st-007",
+      "title": "Hand-Woven Royal Netela Shawl Studio Collection",
+      "description": "Lightweight hand-spun gauze cotton shawl with 4-inch wide gold silk thread woven borders",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/royal-axum-gold-thread-netela-scarf-1-1786729090680-8aa060.jpg",
+      "categories": [
+        "scarves",
+        "accessories",
+        "mens"
+      ],
+      "tags": [
+        "netela",
+        "shawl",
+        "gold-thread",
+        "hand-loomed"
+      ],
+      "isFeatured": false,
+      "isHidden": false,
+      "orderIndex": 7,
+      "createdAt": "2026-08-14T18:47:16.839Z",
+      "productIds": [
+        "prod-007"
+      ]
+    },
+    {
+      "id": "st-008",
+      "title": "Addis Ababa Haute Couture Runway Kemis Gown",
+      "description": "Contemporary runway fashion Kemis featuring a tailored corset bodice and flowing loomed gold Tibeb cape",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/emperor-menelik-royal-kuta-suit-2-1786729081717-b2dbb2.jpg",
+      "categories": [
+        "modern-traditional",
+        "womens"
+      ],
+      "tags": [
+        "runway",
+        "couture",
+        "haute-fashion",
+        "modern"
+      ],
+      "isFeatured": true,
+      "isHidden": false,
+      "orderIndex": 8,
+      "createdAt": "2026-08-14T18:47:16.854Z",
+      "productIds": [
+        "prod-009"
+      ]
+    },
+    {
+      "id": "st-009",
+      "title": "Shiro Meda Master Weavers Loom Artistry",
+      "description": "Behind-the-scenes portrait of master weavers crafting double-sided 24K gold thread Habesha Kemis",
+      "imageUrl": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/shewa-modern-runway-kemis-gown-2-1786729092952-46b4eb.jpg",
+      "categories": [
+        "behind-the-scenes",
+        "traditional-dresses"
+      ],
+      "tags": [
+        "artisan",
+        "master-weaver",
+        "shiro-meda",
+        "loom"
+      ],
+      "isFeatured": false,
+      "isHidden": false,
+      "orderIndex": 9,
+      "createdAt": "2026-08-14T18:47:16.869Z",
+      "productIds": []
+    }
+  ],
+  "currencyRates": {
+    "ETB": {
+      "code": "ETB",
+      "symbol": "ETB ",
+      "rateToUSD": 1
+    }
+  },
+  "adminUsers": [
+    {
+      "id": "adm-01",
+      "username": "admin",
+      "email": "admin@yaredtibeb.com",
+      "fullName": "Yared Studio Administrator",
+      "role": "Super Admin",
+      "status": "active",
+      "createdAt": "2026-08-14T18:47:16.912Z",
+      "lastLoginAt": "2026-08-14T18:32:38.320Z",
+      "passwordHash": "$2b$10$6MZUf12phl3hZU1zuePr6eGlzFKr4wevzNa30FXMScVFDeiaq4nGG",
+      "securityQuestion": "What is the founding heritage city of Yared Tibeb?",
+      "securityAnswerHash": "$2b$10$D7/PUQqgideWmbc5b8iFWeBsqp4iruQJgZRsV/gAhXcEqkmaPBJKe"
+    }
+  ],
+  "uploadedImages": [
+    {
+      "id": "img-1786918435129-88b9b2",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-tertiary-1786918216622-2c225b52.jpg.jpg",
+      "filename": "hero-tertiary-1786918216622-2c225b52.jpg.jpg",
+      "originalName": "hero-tertiary-1786918216622-2c225b52.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 109965,
+      "destination": "branding",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:55.129Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "images/branding/hero-tertiary-1786918216622-2c225b52.jpg.jpg"
+    },
+    {
+      "id": "img-1786918433970-31fa8c",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-secondary-1786918216621-3a54331b.jpg.jpg",
+      "filename": "hero-secondary-1786918216621-3a54331b.jpg.jpg",
+      "originalName": "hero-secondary-1786918216621-3a54331b.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 153336,
+      "destination": "branding",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:53.970Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "images/branding/hero-secondary-1786918216621-3a54331b.jpg.jpg"
+    },
+    {
+      "id": "img-1786918432580-6eea31",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-secondary-1786918209455-bed30d53.jpg.jpg",
+      "filename": "hero-secondary-1786918209455-bed30d53.jpg.jpg",
+      "originalName": "hero-secondary-1786918209455-bed30d53.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 153336,
+      "destination": "branding",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:52.580Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "images/branding/hero-secondary-1786918209455-bed30d53.jpg.jpg"
+    },
+    {
+      "id": "img-1786918431479-0d5627",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-primary-1786918181944-5af003fe.jpg.jpg",
+      "filename": "hero-primary-1786918181944-5af003fe.jpg.jpg",
+      "originalName": "hero-primary-1786918181944-5af003fe.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 191427,
+      "destination": "branding",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:51.479Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "images/branding/hero-primary-1786918181944-5af003fe.jpg.jpg"
+    },
+    {
+      "id": "img-1786920239287-165793",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/collection-1786821831375-1786821837022-949176.jpg",
+      "filename": "collection-1786821831375-1786821837022-949176.jpg",
+      "originalName": "zxcvbnm-1.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "collection",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:43:59.287Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918402116-3a2891",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/promotional-banner-jpg-1786918400334-adb69f.jpg",
+      "filename": "promotional-banner-jpg-1786918400334-adb69f.jpg",
+      "originalName": "promotional-banner.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1618640,
+      "destination": "collection",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:22.116Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "images/collection/promotional-banner-jpg-1786918400334-adb69f.jpg"
+    },
+    {
+      "id": "img-1786918400333-dc579d",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/craftsmanship-jpg-1786918398751-a9399c.jpg",
+      "filename": "craftsmanship-jpg-1786918398751-a9399c.jpg",
+      "originalName": "craftsmanship.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1293639,
+      "destination": "collection",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:20.333Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "images/collection/craftsmanship-jpg-1786918398751-a9399c.jpg"
+    },
+    {
+      "id": "img-1786918398750-af4d82",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/brand-logo-jpg-1786918397009-c54733.jpg",
+      "filename": "brand-logo-jpg-1786918397009-c54733.jpg",
+      "originalName": "brand-logo.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1523463,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:18.750Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/brand-logo-jpg-1786918397009-c54733.jpg"
+    },
+    {
+      "id": "img-1786918397008-182539",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/brand-favicon-png-1786918395113-f23d28.jpg",
+      "filename": "brand-favicon-png-1786918395113-f23d28.jpg",
+      "originalName": "brand-favicon.png.png",
+      "mimeType": "image/png",
+      "size": 1523463,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:17.008Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/brand-favicon-png-1786918395113-f23d28.jpg"
+    },
+    {
+      "id": "img-1786918395112-730e44",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/hero-primary-jpg-1786918393385-b8f744.jpg",
+      "filename": "hero-primary-jpg-1786918393385-b8f744.jpg",
+      "originalName": "hero-primary.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1793486,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:15.112Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/hero-primary-jpg-1786918393385-b8f744.jpg"
+    },
+    {
+      "id": "img-1786918393384-758631",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/hero-secondary-jpg-1786918391258-683298.jpg",
+      "filename": "hero-secondary-jpg-1786918391258-683298.jpg",
+      "originalName": "hero-secondary.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1391345,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:13.384Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/hero-secondary-jpg-1786918391258-683298.jpg"
+    },
+    {
+      "id": "img-1786918391257-5d90cb",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/hero-tertiary-jpg-1786918389632-1ec77c.jpg",
+      "filename": "hero-tertiary-jpg-1786918389632-1ec77c.jpg",
+      "originalName": "hero-tertiary.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1347847,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:11.257Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/hero-tertiary-jpg-1786918389632-1ec77c.jpg"
+    },
+    {
+      "id": "img-1786918389631-8d5daa",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/about-us-jpg-1786918387863-f09f8e.jpg",
+      "filename": "about-us-jpg-1786918387863-f09f8e.jpg",
+      "originalName": "about-us.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1347847,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:09.631Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/about-us-jpg-1786918387863-f09f8e.jpg"
+    },
+    {
+      "id": "img-1786918387862-1292af",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-1-jpg-1786918386144-9f6cf1.jpg",
+      "filename": "lookbook-1-jpg-1786918386144-9f6cf1.jpg",
+      "originalName": "lookbook-1.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1793486,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:07.862Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/lookbook-1-jpg-1786918386144-9f6cf1.jpg"
+    },
+    {
+      "id": "img-1786918386143-74b43e",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-2-jpg-1786918384514-41e78a.jpg",
+      "filename": "lookbook-2-jpg-1786918384514-41e78a.jpg",
+      "originalName": "lookbook-2.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1391345,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:06.143Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/lookbook-2-jpg-1786918384514-41e78a.jpg"
+    },
+    {
+      "id": "img-1786918384513-d19d18",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-3-jpg-1786918382968-b7efbd.jpg",
+      "filename": "lookbook-3-jpg-1786918382968-b7efbd.jpg",
+      "originalName": "lookbook-3.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1347847,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:04.513Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/lookbook-3-jpg-1786918382968-b7efbd.jpg"
+    },
+    {
+      "id": "img-1786918382967-fbd3e3",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-4-jpg-1786918381206-098626.jpg",
+      "filename": "lookbook-4-jpg-1786918381206-098626.jpg",
+      "originalName": "lookbook-4.jpg.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 1618640,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:02.967Z",
+      "uploadedBy": "admin",
+      "provider": "github",
+      "publicId": "general/lookbook-4-jpg-1786918381206-098626.jpg"
+    },
+    {
+      "id": "img-1787085879662-e6f07e",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/shewa-modern-runway-kemis-gown-2-1786729092952-46b4eb.jpg",
+      "filename": "shewa-modern-runway-kemis-gown-2-1786729092952-46b4eb.jpg",
+      "originalName": "Shiro Meda Master Weavers Loom Artistry.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-18T20:44:39.662Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1787085879660-40b84e",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/emperor-menelik-royal-kuta-suit-2-1786729081717-b2dbb2.jpg",
+      "filename": "emperor-menelik-royal-kuta-suit-2-1786729081717-b2dbb2.jpg",
+      "originalName": "Addis Ababa Haute Couture Runway Kemis Gown.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-18T20:44:39.660Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1787085879656-0cd58a",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/royal-axum-gold-thread-netela-scarf-1-1786729090680-8aa060.jpg",
+      "filename": "royal-axum-gold-thread-netela-scarf-1-1786729090680-8aa060.jpg",
+      "originalName": "Hand-Woven Royal Netela Shawl Studio Collection.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-18T20:44:39.656Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1787085879653-42c5d0",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/imperial-family-matching-habesha-kemis-s-1786729088216-ddc2cf.jpg",
+      "filename": "imperial-family-matching-habesha-kemis-s-1786729088216-ddc2cf.jpg",
+      "originalName": "Imperial Family Matching Ensemble Set.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-18T20:44:39.653Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1787085879649-0908d9",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/axumite-24k-gold-filigree-jewelry-set-1-1786729086171-d03acc.jpg",
+      "filename": "axumite-24k-gold-filigree-jewelry-set-1-1786729086171-d03acc.jpg",
+      "originalName": "24K Gold Filigree Axumite Jewelry Set.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-18T20:44:39.649Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1787085879647-ea23fd",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/oromia-queen-siinqee-heritage-dress-1-1786729083889-b46f21.jpg",
+      "filename": "oromia-queen-siinqee-heritage-dress-1-1786729083889-b46f21.jpg",
+      "originalName": "Oromia Queen Siinqee Traditional Ceremonial Couture.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-18T20:44:39.647Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1787085879644-cd188d",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/empress-taytu-royal-bridal-kemis-2-1786729077630-0191fb.jpg",
+      "filename": "empress-taytu-royal-bridal-kemis-2-1786729077630-0191fb.jpg",
+      "originalName": "Gondar Heritage Queen Zewditu Silk Gown.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-18T20:44:39.644Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786920239594-064ccb",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/emperor-menelik-royal-kuta-suit-1-1786729079635-62e7d9.jpg",
+      "filename": "emperor-menelik-royal-kuta-suit-1-1786729079635-62e7d9.jpg",
+      "originalName": "Emperor Menelik Diplomatic Kuta & Suit.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:43:59.594Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786920239584-9f86a1",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/empress-taytu-royal-bridal-kemis-1-1786729075388-5b1d74.jpg",
+      "filename": "empress-taytu-royal-bridal-kemis-1-1786729075388-5b1d74.jpg",
+      "originalName": "Empress Taytu Royal Bridal Kemis Lookbook.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:43:59.584Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786920239570-3215da",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/sdfghjkl-1786812753311-1786812758737-891081.jpg",
+      "filename": "sdfghjkl-1786812753311-1786812758737-891081.jpg",
+      "originalName": "sdfghjkl;-1.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "collection",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:43:59.570Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786920239557-df87ed",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/asdfghj-1786818225382-1786818229673-8f6895.jpg",
+      "filename": "asdfghj-1786818225382-1786818229673-8f6895.jpg",
+      "originalName": "asdfghj-1.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:43:59.557Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786920239545-28ff1a",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/qwerty-1786820332807-1786820337413-8a5edd.jpg",
+      "filename": "qwerty-1786820332807-1786820337413-8a5edd.jpg",
+      "originalName": "QWERTY-1.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "liveshow",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:43:59.545Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786920239533-7cd7e0",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/asdfghj-1786820438395-1786820444042-251bdb.jpg",
+      "filename": "asdfghj-1786820438395-1786820444042-251bdb.jpg",
+      "originalName": "asdfghj-1.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "studio",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:43:59.533Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380740-fcb5fa",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-4-jpg-1786918381206-098626.jpg",
+      "filename": "collection-1786821831375-1786821837022-949176.jpg",
+      "originalName": "zxcvbnm-1.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "collection",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.740Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380520-b4759d",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-3-jpg-1786918382968-b7efbd.jpg",
+      "filename": "lookbook-4.jpg",
+      "originalName": "lookbook-4.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1618640,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.520Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380520-2c8cda",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-2-jpg-1786918384514-41e78a.jpg",
+      "filename": "lookbook-3.jpg",
+      "originalName": "lookbook-3.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1347847,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.520Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380520-2fa7a6",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/lookbook-1-jpg-1786918386144-9f6cf1.jpg",
+      "filename": "lookbook-2.jpg",
+      "originalName": "lookbook-2.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1391345,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.520Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380520-4e8c70",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/about-us-jpg-1786918387863-f09f8e.jpg",
+      "filename": "lookbook-1.jpg",
+      "originalName": "lookbook-1.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1793486,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.520Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380520-7359a6",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/hero-tertiary-jpg-1786918389632-1ec77c.jpg",
+      "filename": "about-us.jpg",
+      "originalName": "about-us.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1347847,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.520Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380520-e7bfb9",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/hero-secondary-jpg-1786918391258-683298.jpg",
+      "filename": "hero-tertiary.jpg",
+      "originalName": "hero-tertiary.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1347847,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.520Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380519-7ffdcf",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/hero-primary-jpg-1786918393385-b8f744.jpg",
+      "filename": "hero-secondary.jpg",
+      "originalName": "hero-secondary.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1391345,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.519Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380519-eea9b9",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/brand-favicon-png-1786918395113-f23d28.jpg",
+      "filename": "hero-primary.jpg",
+      "originalName": "hero-primary.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1793486,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.519Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380519-878bdc",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/general/brand-logo-jpg-1786918397009-c54733.jpg",
+      "filename": "brand-favicon.png",
+      "originalName": "brand-favicon.png",
+      "mimeType": "image/png",
+      "size": 1523463,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.519Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380519-7d6e7b",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/craftsmanship-jpg-1786918398751-a9399c.jpg",
+      "filename": "brand-logo.jpg",
+      "originalName": "brand-logo.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1523463,
+      "destination": "general",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-16T22:13:00.519Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380523-3a0577",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/promotional-banner-jpg-1786918400334-adb69f.jpg",
+      "filename": "craftsmanship.jpg",
+      "originalName": "craftsmanship.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1293639,
+      "destination": "collection",
+      "uploadedAt": "2026-08-16T22:13:00.523Z",
+      "uploadedBy": "system",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918380523-94880f",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-primary-1786918181944-5af003fe.jpg.jpg",
+      "filename": "promotional-banner.jpg",
+      "originalName": "promotional-banner.jpg",
+      "mimeType": "image/jpeg",
+      "size": 1618640,
+      "destination": "collection",
+      "uploadedAt": "2026-08-16T22:13:00.523Z",
+      "uploadedBy": "system",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918429486-f28a8f",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-secondary-1786918209455-bed30d53.jpg.jpg",
+      "filename": "hero-primary-1786918181944-5af003fe.jpg",
+      "originalName": "hero-primary-1786918181944-5af003fe.jpg",
+      "mimeType": "image/jpeg",
+      "size": 191427,
+      "destination": "branding",
+      "uploadedAt": "2026-08-16T22:09:41.945Z",
+      "uploadedBy": "system",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918429486-1c5a56",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-secondary-1786918216621-3a54331b.jpg.jpg",
+      "filename": "hero-secondary-1786918209455-bed30d53.jpg",
+      "originalName": "hero-secondary-1786918209455-bed30d53.jpg",
+      "mimeType": "image/jpeg",
+      "size": 153336,
+      "destination": "branding",
+      "uploadedAt": "2026-08-16T22:10:09.456Z",
+      "uploadedBy": "system",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918429486-1a3f1d",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-tertiary-1786918216622-2c225b52.jpg.jpg",
+      "filename": "hero-secondary-1786918216621-3a54331b.jpg",
+      "originalName": "hero-secondary-1786918216621-3a54331b.jpg",
+      "mimeType": "image/jpeg",
+      "size": 153336,
+      "destination": "branding",
+      "uploadedAt": "2026-08-16T22:10:16.622Z",
+      "uploadedBy": "system",
+      "provider": "github"
+    },
+    {
+      "id": "img-1786918429486-b0839a",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-tertiary-1786918216622-2c225b52.jpg.jpg",
+      "filename": "hero-tertiary-1786918216622-2c225b52.jpg",
+      "originalName": "hero-tertiary-1786918216622-2c225b52.jpg",
+      "mimeType": "image/jpeg",
+      "size": 109965,
+      "destination": "branding",
+      "uploadedAt": "2026-08-16T22:10:16.623Z",
+      "uploadedBy": "system",
+      "provider": "github"
+    }
+  ]
+}
