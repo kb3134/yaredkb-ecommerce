@@ -1,12 +1,12 @@
 [
   {
-    "id": "hk-1786927012733",
-    "name": "Zxcvbkl",
+    "id": "hk-1786926954923",
+    "name": "';lkjhgfd",
     "amharicName": "",
-    "category": "wedding",
+    "category": "family",
     "collections": [
-      "liveshow",
-      "wedding"
+      "family",
+      "liveshow"
     ],
     "priceUSD": 1850,
     "rating": 5,
@@ -20,9 +20,9 @@
     "fabric": "",
     "weaverRegion": "",
     "images": [
-      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/zxcvbkl-1786927048989-1786927054811-d108bf.jpg"
+      "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/lkjhgfd-1786926940513-1786926947049-2e08cf.jpg"
     ],
-    "description": "ASDFGHJ",
+    "description": "asdfghj",
     "details": [],
     "sizes": [
       "S",
@@ -34,10 +34,7 @@
       "White & Gold"
     ],
     "weavingDays": 10,
-    "studioCategory": "",
-    "destinations": [
-      "liveshow"
-    ]
+    "studioCategory": ""
   },
   {
     "id": "hk-1786821846708",
