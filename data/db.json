@@ -344,6 +344,20 @@
   ],
   "uploadedImages": [
     {
+      "id": "img-1787224935526-840793",
+      "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/collection/lkjhgfd-1786926940513-1786926947049-2e08cf.jpg",
+      "filename": "lkjhgfd-1786926940513-1786926947049-2e08cf.jpg",
+      "originalName": "';lkjhgfd-1.jpeg",
+      "mimeType": "image/jpeg",
+      "size": 150000,
+      "destination": "liveshow",
+      "associatedId": "",
+      "associatedTitle": "",
+      "uploadedAt": "2026-08-20T11:22:15.526Z",
+      "uploadedBy": "admin",
+      "provider": "github"
+    },
+    {
       "id": "img-1786918435129-88b9b2",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/images/branding/hero-tertiary-1786918216622-2c225b52.jpg.jpg",
       "filename": "hero-tertiary-1786918216622-2c225b52.jpg.jpg",
@@ -404,7 +418,7 @@
       "publicId": "images/branding/hero-primary-1786918181944-5af003fe.jpg.jpg"
     },
     {
-      "id": "img-1786920239287-165793",
+      "id": "img-1787224935534-9a0813",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/collection-1786821831375-1786821837022-949176.jpg",
       "filename": "collection-1786821831375-1786821837022-949176.jpg",
       "originalName": "zxcvbnm-1.jpeg",
@@ -413,7 +427,7 @@
       "destination": "collection",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-16T22:43:59.287Z",
+      "uploadedAt": "2026-08-20T11:22:15.534Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
@@ -598,7 +612,7 @@
       "publicId": "general/lookbook-4-jpg-1786918381206-098626.jpg"
     },
     {
-      "id": "img-1787090905196-19430c",
+      "id": "img-1787224935592-126c47",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/shewa-modern-runway-kemis-gown-2-1786729092952-46b4eb.jpg",
       "filename": "shewa-modern-runway-kemis-gown-2-1786729092952-46b4eb.jpg",
       "originalName": "Shiro Meda Master Weavers Loom Artistry.jpeg",
@@ -607,12 +621,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.196Z",
+      "uploadedAt": "2026-08-20T11:22:15.592Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905183-217641",
+      "id": "img-1787224935590-5e4695",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/emperor-menelik-royal-kuta-suit-2-1786729081717-b2dbb2.jpg",
       "filename": "emperor-menelik-royal-kuta-suit-2-1786729081717-b2dbb2.jpg",
       "originalName": "Addis Ababa Haute Couture Runway Kemis Gown.jpeg",
@@ -621,12 +635,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.183Z",
+      "uploadedAt": "2026-08-20T11:22:15.590Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905174-6bd11e",
+      "id": "img-1787224935587-13ee0c",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/royal-axum-gold-thread-netela-scarf-1-1786729090680-8aa060.jpg",
       "filename": "royal-axum-gold-thread-netela-scarf-1-1786729090680-8aa060.jpg",
       "originalName": "Hand-Woven Royal Netela Shawl Studio Collection.jpeg",
@@ -635,12 +649,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.174Z",
+      "uploadedAt": "2026-08-20T11:22:15.587Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905166-608676",
+      "id": "img-1787224935584-6ff1f4",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/imperial-family-matching-habesha-kemis-s-1786729088216-ddc2cf.jpg",
       "filename": "imperial-family-matching-habesha-kemis-s-1786729088216-ddc2cf.jpg",
       "originalName": "Imperial Family Matching Ensemble Set.jpeg",
@@ -649,12 +663,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.166Z",
+      "uploadedAt": "2026-08-20T11:22:15.584Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905161-e345b4",
+      "id": "img-1787224935581-00d47c",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/axumite-24k-gold-filigree-jewelry-set-1-1786729086171-d03acc.jpg",
       "filename": "axumite-24k-gold-filigree-jewelry-set-1-1786729086171-d03acc.jpg",
       "originalName": "24K Gold Filigree Axumite Jewelry Set.jpeg",
@@ -663,12 +677,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.161Z",
+      "uploadedAt": "2026-08-20T11:22:15.581Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905150-580846",
+      "id": "img-1787224935578-24f1ac",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/oromia-queen-siinqee-heritage-dress-1-1786729083889-b46f21.jpg",
       "filename": "oromia-queen-siinqee-heritage-dress-1-1786729083889-b46f21.jpg",
       "originalName": "Oromia Queen Siinqee Traditional Ceremonial Couture.jpeg",
@@ -677,12 +691,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.150Z",
+      "uploadedAt": "2026-08-20T11:22:15.578Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905140-c1feea",
+      "id": "img-1787224935575-e87fa3",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/empress-taytu-royal-bridal-kemis-2-1786729077630-0191fb.jpg",
       "filename": "empress-taytu-royal-bridal-kemis-2-1786729077630-0191fb.jpg",
       "originalName": "Gondar Heritage Queen Zewditu Silk Gown.jpeg",
@@ -691,12 +705,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.140Z",
+      "uploadedAt": "2026-08-20T11:22:15.575Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905131-a5063d",
+      "id": "img-1787224935571-f5a44e",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/emperor-menelik-royal-kuta-suit-1-1786729079635-62e7d9.jpg",
       "filename": "emperor-menelik-royal-kuta-suit-1-1786729079635-62e7d9.jpg",
       "originalName": "Emperor Menelik Diplomatic Kuta & Suit.jpeg",
@@ -705,12 +719,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.131Z",
+      "uploadedAt": "2026-08-20T11:22:15.571Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1787090905126-2e1f36",
+      "id": "img-1787224935568-4975ed",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/empress-taytu-royal-bridal-kemis-1-1786729075388-5b1d74.jpg",
       "filename": "empress-taytu-royal-bridal-kemis-1-1786729075388-5b1d74.jpg",
       "originalName": "Empress Taytu Royal Bridal Kemis Lookbook.jpeg",
@@ -719,12 +733,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-18T22:08:25.126Z",
+      "uploadedAt": "2026-08-20T11:22:15.568Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1786920239570-3215da",
+      "id": "img-1787224935564-4bb5a1",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/sdfghjkl-1786812753311-1786812758737-891081.jpg",
       "filename": "sdfghjkl-1786812753311-1786812758737-891081.jpg",
       "originalName": "sdfghjkl;-1.jpeg",
@@ -733,12 +747,12 @@
       "destination": "collection",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-16T22:43:59.570Z",
+      "uploadedAt": "2026-08-20T11:22:15.564Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1786920239557-df87ed",
+      "id": "img-1787224935559-69736c",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/asdfghj-1786818225382-1786818229673-8f6895.jpg",
       "filename": "asdfghj-1786818225382-1786818229673-8f6895.jpg",
       "originalName": "asdfghj-1.jpeg",
@@ -747,12 +761,12 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-16T22:43:59.557Z",
+      "uploadedAt": "2026-08-20T11:22:15.559Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1786920239545-28ff1a",
+      "id": "img-1787224935550-51ae16",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/qwerty-1786820332807-1786820337413-8a5edd.jpg",
       "filename": "qwerty-1786820332807-1786820337413-8a5edd.jpg",
       "originalName": "QWERTY-1.jpeg",
@@ -761,12 +775,12 @@
       "destination": "liveshow",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-16T22:43:59.545Z",
+      "uploadedAt": "2026-08-20T11:22:15.550Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
     {
-      "id": "img-1786920239533-7cd7e0",
+      "id": "img-1787224935539-53bce0",
       "url": "https://raw.githubusercontent.com/kb3134/yaredkb-ecommerce/main/yared-couture/asdfghj-1786820438395-1786820444042-251bdb.jpg",
       "filename": "asdfghj-1786820438395-1786820444042-251bdb.jpg",
       "originalName": "asdfghj-1.jpeg",
@@ -775,7 +789,7 @@
       "destination": "studio",
       "associatedId": "",
       "associatedTitle": "",
-      "uploadedAt": "2026-08-16T22:43:59.533Z",
+      "uploadedAt": "2026-08-20T11:22:15.539Z",
       "uploadedBy": "admin",
       "provider": "github"
     },
